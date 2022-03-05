@@ -1,0 +1,110 @@
+body {
+  width: 250px;
+  background-color: #7aa7c7;
+}
+
+input,
+span {
+  border-width: 0px;
+  border: none;
+  background: none;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 12px;
+  border-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.task {
+  padding: 6px;
+}
+
+.task:hover {
+  background: lightskyblue;
+}
+
+.show {
+  display: block;
+}
+
+#task_input_div {
+  margin-bottom: 12px;
+  transition: opacity 1s;
+  opacity: 0.4;
+  display: inline-flex;
+}
+
+#task_input_div:hover {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+#fortoday {
+  text-align: left;
+  width: 90%;
+  margin: 12px;
+}
+
+.question {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.question:hover,
+.question:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.question:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.question:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+.remove {
+  float: right;
+  opacity: 0.3;
+  color: darkred;
+  transition: opacity 1s;
+}
+
+.remove:hover {
+  transition: opacity 1s;
+  opacity: 1;
+  cursor: pointer;
+}
